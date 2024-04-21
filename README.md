@@ -7,13 +7,11 @@
 
 Для установки необходимо выполнить следущие шаги:
 
-1. Заугрузить дистрибутив на компьютер: git clone 
-1. загрузить из дистрибутива скрипт, устанавливающий драйверы датчиков и котроллеров driver_install.bash
-
-2. Соберите Docker-образ (custom_image_01) из Dockerfile.
+1. Заугрузить дистрибутив на компьютер с помощью SSH: git clone git@github.com:Alexthus/Final-work.git
+2. Скрипт, устанавливающий драйверы датчиков и котроллеров - driver_install.bash понадобится для сборки образа.
+3. Соберите Docker-образ (custom_image_01) из Dockerfile.
         	docker build -t custom_image_01 .
-
- Запустите образ:
+4. Загруите и запустите образ на роботе:
         	docker run -it custom_image_01
 
- Запустите узлы контролеров двигателей колёс roslaunch roslaunch.launch
+5. Запустите узлы контролеров двигателей колёс roslaunch roslaunch.launch
