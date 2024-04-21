@@ -11,7 +11,7 @@
 2. Скрипт, устанавливающий драйверы датчиков и котроллеров - driver_install.bash понадобится для сборки образа.
 3. Соберите Docker-образ (custom_image_01) из Dockerfile.
         	docker build -t custom_image_01 .
-4. Загруите и запустите образ на роботе:
+4. Загрузите и запустите образ на роботе:
         	docker run -it custom_image_01
 
 5. Запустите узлы контролеров двигателей колёс roslaunch roslaunch.launch
